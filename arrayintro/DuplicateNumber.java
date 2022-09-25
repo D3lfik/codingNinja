@@ -1,0 +1,20 @@
+package arrayintro;
+
+public class DuplicateNumber {
+	   public static int duplicateNumber(int arr[]) {
+			for (int i = 0; i < arr.length; i++) {
+	            int jg=-1;
+	            for (int j = 0; j < arr.length; j++) {
+	                    if (arr[i]==arr[j]){
+	                        jg++;
+	                    }
+	            }
+	            if (jg>0)
+	                return arr[i];
+	        
+
+	        }
+	        return 0;
+	    }
+	}
+
